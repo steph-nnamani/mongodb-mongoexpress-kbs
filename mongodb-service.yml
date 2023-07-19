@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+         name: mongodb-service  #a random name
+spec:
+  selector: 
+    app: mongodb # to connect to pod through label
+  ports:
+    - protocol: tcp
+      port: 27017 #service port, can be different from target port
+      targetport: 27017 #containerport of Deployment, gotten from the image
