@@ -2,6 +2,7 @@ MONGODB
 we use docker official image - mongo. Checkout dockerhub and findout more information on how to use this image - root password and username, environmental variables, etc
 
 # Use root/example as user/password credentials
+#This is just a sample
 version: '3.1'
 
 services:
